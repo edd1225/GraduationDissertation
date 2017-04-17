@@ -1,0 +1,118 @@
+version: '2'
+services:
+    redis:
+        image: redis
+        ports: 
+            - "6389:6379"
+    rabbitmq:
+        image: rabbitmq
+        ports: 
+            - "5673:5672"
+    db:
+        image: mysql:latest
+        environment: 
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_USER: root
+            MYSQL_PASSWORD: root
+            MYSQL_DATABASE: coupons
+        volumes:
+            - "./db:/docker-entrypoint-initdb.d"
+        ports: 
+            - "3306:3306"
+    tomcat_node_1:
+        image: tomcat:latest
+        environment: 
+            VIRTUAL_HOST: tomcat_node_1.com
+            VIRTUAL_PORT: 8080
+            JDBC_USER: root
+            JDBC_PASS: root
+            JDBC_URL: jdbc:mysql://db:3306/coupons?useSSL=false
+        volumes: 
+            - "./tomcat/webapps:/usr/local/tomcat/webapps"
+        links: 
+            - db
+        depends_on: 
+            - db
+        ports: 
+            - "8081:8080"
+    tomcat_node_2:
+        image: tomcat:latest
+        environment: 
+            VIRTUAL_HOST: tomcat_node_1.com
+            VIRTUAL_PORT: 8080
+            JDBC_USER: root
+            JDBC_PASS: root
+            JDBC_URL: jdbc:mysql://db:3306/coupons?useSSL=false
+        volumes: 
+            - "./tomcat/webapps:/usr/local/tomcat/webapps"
+        links: 
+            - db
+        depends_on: 
+            - db
+        ports: 
+            - "8082:8080"
+    tomcat_node_3:
+        image: tomcat:latest
+        environment: 
+            VIRTUAL_HOST: tomcat_node_1.com
+            VIRTUAL_PORT: 8080
+            JDBC_USER: root
+            JDBC_PASS: root
+            JDBC_URL: jdbc:mysql://db:3306/coupons?useSSL=false
+        volumes: 
+            - "./tomcat/webapps:/usr/local/tomcat/webapps"
+        links: 
+            - db
+        depends_on: 
+            - db
+        ports: 
+            - "8083:8080"
+    tomcat_node_4:
+        image: tomcat:latest
+        environment: 
+            VIRTUAL_HOST: tomcat_node_1.com
+            VIRTUAL_PORT: 8080
+            JDBC_USER: root
+            JDBC_PASS: root
+            JDBC_URL: jdbc:mysql://db:3306/coupons?useSSL=false
+        volumes: 
+            - "./tomcat/webapps:/usr/local/tomcat/webapps"
+        links: 
+            - db
+        depends_on: 
+            - db
+        ports: 
+            - "8084:8080"
+    consumer1:
+        build: ./consumer
+        restart: always
+        depends_on: 
+            - db
+            - rabbitmq
+        links: 
+            - db
+            - rabbitmq
+    consumer2:
+        build: ./consumer
+        restart: always
+        depends_on: 
+            - db
+            - rabbitmq
+        links: 
+            - db
+            - rabbitmq
+    consumer3:
+        build: ./consumer
+        restart: always
+        depends_on: 
+            - db
+            - rabbitmq
+        links: 
+            - db
+            - rabbitmq
+networks:
+  default:
+    external:
+      name: nginx-proxy
+
+# docker inspect --format='{{.NetworkSettings.IPAddress}}' $(docker ps -a -q)  

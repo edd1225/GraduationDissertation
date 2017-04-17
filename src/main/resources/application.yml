@@ -1,0 +1,16 @@
+
+jwt:
+  header: Authorization
+  secret: GangsterHyj
+  expiration: 604800
+  route:
+    registration:
+      path: register
+    authentication:
+      path: auth
+      refresh: refresh
+
+
+spring:
+  profiles:
+    active: dev

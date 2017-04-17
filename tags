@@ -1,0 +1,88 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+EXCEPT	python/web_test.py	/^EXCEPT = 0 #响应异常数$/;"	kind:variable	line:12
+FAIL	python/web_test.py	/^FAIL = 0 #响应失败数$/;"	kind:variable	line:11
+FAILURE	python/secondkill.py	/^FAILURE = 0$/;"	kind:variable	line:23
+GT3	python/web_test.py	/^GT3=0 #统计3秒内响应的$/;"	kind:variable	line:16
+HOST	python/web_test.py	/^HOST = "127.0.0.1"; #主机地址 例如192.168.1.101$/;"	kind:variable	line:6
+LIMIT	python/consumer_advanced.py	/^LIMIT = 10$/;"	kind:variable	line:19
+LT3	python/web_test.py	/^LT3=0 #统计大于3秒响应的$/;"	kind:variable	line:17
+MAXTIME	python/web_test.py	/^MAXTIME=0 #最大响应时间$/;"	kind:variable	line:13
+MINTIME	python/web_test.py	/^MINTIME=100 #最小响应时间，初始值为100秒$/;"	kind:variable	line:14
+PORT	python/web_test.py	/^PORT = 8001 #端口$/;"	kind:variable	line:7
+RequestThread	python/web_test.py	/^class RequestThread(threading.Thread):$/;"	kind:class	line:20
+SUCC	python/web_test.py	/^SUCC = 0 #响应成功数$/;"	kind:variable	line:10
+SUCCESS	python/secondkill.py	/^SUCCESS = 0$/;"	kind:variable	line:22
+TOTAL	python/web_test.py	/^TOTAL = 0 #总数$/;"	kind:variable	line:9
+TOTALTIME	python/web_test.py	/^TOTALTIME = 0 #总的响应时间$/;"	kind:variable	line:15
+URI	python/web_test.py	/^URI = "\/api\/huohuaId2Url" #相对地址,加参数防止缓存，否则可能会返回304$/;"	kind:variable	line:8
+__author__	python/web_test.py	/^__author__ = 'klb3713'$/;"	kind:variable	line:3
+__init__	python/web_test.py	/^    def __init__(self, thread_name, post_data):$/;"	kind:member	line:22
+base_url	python/login.py	/^base_url = 'http:\/\/localhost:7777'$/;"	kind:variable	line:9
+base_url	python/register.py	/^base_url = 'http:\/\/localhost:7777'$/;"	kind:variable	line:18
+base_url	python/secondkill.py	/^base_url = 'http:\/\/localhost:7777'$/;"	kind:variable	line:9
+base_url	python/test.py	/^base_url = 'http:\/\/localhost:7777'$/;"	kind:variable	line:5
+callback	python/consumer.py	/^def callback(ch, method, properties, body):$/;"	kind:function	line:20
+callback	python/consumer_advanced.py	/^def callback(ch, method, properties, body):$/;"	kind:function	line:23
+channel	python/consumer.py	/^channel = connection.channel()$/;"	kind:variable	line:12
+channel	python/consumer_advanced.py	/^channel = connection.channel()$/;"	kind:variable	line:12
+connection	python/consumer.py	/^connection = pika.BlockingConnection(pika.ConnectionParameters($/;"	kind:variable	line:10
+connection	python/consumer_advanced.py	/^connection = pika.BlockingConnection(pika.ConnectionParameters($/;"	kind:variable	line:10
+consumer.py	python/consumer.py	1;"	kind:file	line:1
+consumer_advanced.py	python/consumer_advanced.py	1;"	kind:file	line:1
+cursor	python/test_mysql.py	/^cursor = db.cursor()$/;"	kind:variable	line:14
+db	python/consumer.py	/^db = MySQLdb.connect('localhost', 'root', 'root', 'coupons')$/;"	kind:variable	line:14
+db	python/consumer_advanced.py	/^db = MySQLdb.connect('localhost', 'root', 'root', 'coupons')$/;"	kind:variable	line:14
+db	python/test_mysql.py	/^db = MySQLdb.connect('localhost', 'root', 'root', 'coupons')$/;"	kind:variable	line:6
+f	python/login.py	/^f = open('jwt_list.txt', 'w')$/;"	kind:variable	line:22
+f	python/login.py	/^f = open('user_list.txt', 'r')$/;"	kind:variable	line:16
+f	python/register.py	/^f = open('user_list.txt', 'w')$/;"	kind:variable	line:26
+f	python/secondkill.py	/^f = open('jwt_list.txt', 'r')$/;"	kind:variable	line:15
+generate_random_str	python/register.py	/^def generate_random_str(length=10):$/;"	kind:function	line:8
+headers	python/login.py	/^headers = {'Content-Type': 'application\/json'}$/;"	kind:variable	line:11
+headers	python/register.py	/^headers = {'Content-Type': 'application\/json'}$/;"	kind:variable	line:20
+headers	python/test.py	/^headers = {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJLVHZPMm5SeWcwZCIsImF1ZCI6IjE2NTc0NiIsImV4cCI6MTQ4OTI5MDc3OH0.zJOuKkgBBPdWXh809URZbNE4QuVg2fFbof1quDo6RHw'}$/;"	kind:variable	line:7
+host	python/consumer.py	/^        host='localhost'))$/;"	kind:variable	line:11
+host	python/consumer_advanced.py	/^        host='localhost'))$/;"	kind:variable	line:11
+login.py	python/login.py	1;"	kind:file	line:1
+login_request	python/login.py	/^def login_request(payload, index):$/;"	kind:function	line:26
+maxtime	python/web_test.py	/^    def maxtime(self,ts):$/;"	kind:member	line:74
+mintime	python/web_test.py	/^    def mintime(self,ts):$/;"	kind:member	line:78
+nickname	python/register.py	/^    nickname = generate_random_str(11)$/;"	kind:variable	line:39
+params	python/test_mysql.py	/^params = tuple(tmp_list)$/;"	kind:variable	line:12
+password	python/register.py	/^    password = generate_random_str(11)$/;"	kind:variable	line:38
+payload	python/register.py	/^    payload = {}$/;"	kind:variable	line:40
+payload	python/test.py	/^payload = {'type': 1}$/;"	kind:variable	line:8
+payloads	python/login.py	/^payloads = []$/;"	kind:variable	line:17
+pool	python/login.py	/^pool = ThreadPoolExecutor(max_workers=6)$/;"	kind:variable	line:14
+pool	python/register.py	/^pool = ThreadPoolExecutor(max_workers=4)$/;"	kind:variable	line:24
+pool	python/secondkill.py	/^pool = ThreadPoolExecutor(max_workers=6)$/;"	kind:variable	line:12
+post_datas	python/web_test.py	/^    post_datas = ['{"request-body":{"getVideoUrl":{"videoType":"sohu_url","videoId":"http:\/\/tv.sohu.com\/20130526\/n377096321.shtml"}}}',$/;"	kind:variable	line:148
+r	python/test.py	/^r = requests.get(base_url + '\/api\/secondkill', headers=headers, params=payload)$/;"	kind:variable	line:9
+register.py	python/register.py	1;"	kind:file	line:1
+register_request	python/register.py	/^def register_request(payload, index):$/;"	kind:function	line:32
+run	python/web_test.py	/^    def run(self):$/;"	kind:member	line:28
+secondkill.py	python/secondkill.py	1;"	kind:file	line:1
+secondkill_request	python/secondkill.py	/^def secondkill_request(token, typeNum, index):$/;"	kind:function	line:26
+singleTest	python/web_test.py	/^def singleTest():$/;"	kind:function	line:136
+sql	python/test_mysql.py	/^sql = "INSERT INTO record(username, time, type) VALUES (%s, %s, %s)"$/;"	kind:variable	line:11
+test	python/web_test.py	/^def test(thread_count, post_data):$/;"	kind:function	line:83
+test.py	python/test.py	1;"	kind:file	line:1
+test_mysql.py	python/test_mysql.py	1;"	kind:file	line:1
+test_performace	python/web_test.py	/^    def test_performace(self):$/;"	kind:member	line:33
+tmp_list	python/consumer_advanced.py	/^tmp_list = []$/;"	kind:variable	line:20
+tmp_list	python/test_mysql.py	/^    tmp_list = []$/;"	kind:variable	line:21
+tmp_list	python/test_mysql.py	/^tmp_list = ((u'KTvO2nRyg0d', u'2017-03-05 06:51:16', '10 yuan'), (u'KTvO2nRyg0d', u'2017-03-05 06:51:47', '10 yuan'), (u'KTvO2nRyg0d', u'2017-03-05 06:52:25', '10 yuan'), (u'KTvO2nRyg0d', u'2017-03-05 06:52:26', '10 yuan'), (u'KTvO2nRyg0d', u'2017-03-05 06:52:26', '10 yuan'), (u'KTvO2nRyg0d', u'2017-03-05 06:52:26', '10 yuan'), (u'KTvO2nRyg0d', u'2017-03-05 06:52:27', '10 yuan'), (u'KTvO2nRyg0d', u'2017-03-05 06:52:28', '10 yuan'), (u'KTvO2nRyg0d', u'2017-03-05 06:52:28', '10 yuan'), (u'KTvO2nRyg0d', u'2017-03-05 06:52:30', '10 yuan'))$/;"	kind:variable	line:9
+tokens	python/secondkill.py	/^tokens = []$/;"	kind:variable	line:16
+type_arr	python/consumer.py	/^type_arr = ['5 yuan', '10 yuan', '15 yuan']$/;"	kind:variable	line:17
+type_arr	python/consumer_advanced.py	/^type_arr = ['5 yuan', '10 yuan', '15 yuan']$/;"	kind:variable	line:17
+user_num	python/register.py	/^user_num = 100000$/;"	kind:variable	line:22
+username	python/register.py	/^    username = generate_random_str(11)$/;"	kind:variable	line:37
+web_test.py	python/web_test.py	1;"	kind:file	line:1
+weight_types	python/secondkill.py	/^weight_types = [0, 1, 1, 2]$/;"	kind:variable	line:42
+write_json_to_file	python/register.py	/^def write_json_to_file(payload, index):$/;"	kind:function	line:28
+write_token_to_file	python/login.py	/^def write_token_to_file(token, index):$/;"	kind:function	line:23
